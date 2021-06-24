@@ -1,0 +1,22 @@
+def infoMessage() {
+  log.info """
+H E L L O - W O R L D - 3    P I P E L I N E
+============================================
+    greeting: ${params.greeting}
+  """
+}
+
+def helpMessage() {
+  log.info """
+        Usage:
+        The typical command for running the pipeline is as follows:
+        nextflow run hello3 --greeting "Hello"
+
+        Mandatory arguments: none
+
+        Optional arguments:
+          --help			Display this message
+          --greeting <string>          	Welcoming word or phrase
+   """
+}
+

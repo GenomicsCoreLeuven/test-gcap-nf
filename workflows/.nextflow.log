@@ -1,0 +1,98 @@
+Jun-24 08:57:48.716 [main] DEBUG nextflow.cli.Launcher - $> /work/gcap_nf/nextflow/launch.sh run hello3
+Jun-24 08:57:48.785 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 21.05.0-edge
+Jun-24 08:57:49.414 [main] INFO  nextflow.cli.CmdRun - Launching `hello3/main.nf` [golden_wozniak] - revision: 3fa3519067
+Jun-24 08:57:49.424 [main] DEBUG nextflow.config.ConfigBuilder - Found config base: /root/testing/test-gcap-nf/workflows/hello3/nextflow.config
+Jun-24 08:57:49.425 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /root/testing/test-gcap-nf/workflows/hello3/nextflow.config
+Jun-24 08:57:49.431 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
+Jun-24 08:57:49.475 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=dev; plugins-dir=/work/gcap_nf/nextflow/plugins
+Jun-24 08:57:49.475 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Jun-24 08:57:49.478 [main] DEBUG nextflow.plugin.DevPluginManager - Add plugin root repository: /work/gcap_nf/nextflow/plugins
+Jun-24 08:57:49.483 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Jun-24 08:57:49.484 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Jun-24 08:57:49.490 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.4.1 in 'development' mode
+Jun-24 08:57:49.499 [main] DEBUG nextflow.plugin.DevPluginClasspath - Groovy DEV plugin classpath: classes-dirs=[build/classes/groovy/main, build/classes/main, build/resources/main]; jars-dirs=[build/target/libs]
+Jun-24 08:57:49.516 [main] INFO  org.pf4j.AbstractPluginManager - Plugin 'nf-amazon@1.0.8' resolved
+Jun-24 08:57:49.516 [main] INFO  org.pf4j.AbstractPluginManager - Plugin 'nf-google@1.0.4' resolved
+Jun-24 08:57:49.516 [main] INFO  org.pf4j.AbstractPluginManager - Plugin 'nf-ga4gh@1.0.3' resolved
+Jun-24 08:57:49.516 [main] INFO  org.pf4j.AbstractPluginManager - Plugin 'nf-tower@1.1.1' resolved
+Jun-24 08:57:49.516 [main] INFO  org.pf4j.AbstractPluginManager - Plugin 'nf-console@1.0.3' resolved
+Jun-24 08:57:49.516 [main] INFO  org.pf4j.AbstractPluginManager - Plugin 'nf-ignite@1.2.3' resolved
+Jun-24 08:57:49.516 [main] INFO  org.pf4j.AbstractPluginManager - Plugin 'nf-azure@0.9.8' resolved
+Jun-24 08:57:49.517 [main] DEBUG nextflow.plugin.PluginUpdater - Update not support during dev
+Jun-24 08:57:49.517 [main] DEBUG nextflow.plugin.PluginUpdater - Starting plugin nf-tower version: 1.1.1
+Jun-24 08:57:49.517 [main] INFO  org.pf4j.AbstractPluginManager - Start plugin 'nf-tower@1.1.1'
+Jun-24 08:57:49.523 [main] DEBUG nextflow.plugin.BasePlugin - Plugin started nf-tower@1.1.1
+Jun-24 08:57:49.597 [main] DEBUG nextflow.Session - Session uuid: 4ff9a378-f990-43ec-9c17-3a238f354e3a
+Jun-24 08:57:49.597 [main] DEBUG nextflow.Session - Run name: golden_wozniak
+Jun-24 08:57:49.598 [main] DEBUG nextflow.Session - Executor pool size: 4
+Jun-24 08:57:49.643 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 21.05.0-edge build 5560
+  Created: 28-05-2021 14:24 UTC 
+  System: Linux 4.19.0-16-cloud-amd64
+  Runtime: Groovy 3.0.8 on OpenJDK 64-Bit Server VM 11.0.11+9-post-Debian-1deb10u1
+  Encoding: UTF-8 (ANSI_X3.4-1968)
+  Process: 14806@gcap-nf-prototype1 [10.132.0.116]
+  CPUs: 4 - Mem: 15.7 GB (14.2 GB) - Swap: 0 (0)
+Jun-24 08:57:49.664 [main] DEBUG nextflow.Session - Work-dir: /root/testing/test-gcap-nf/workflows/work [ext2/ext3]
+Jun-24 08:57:49.664 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /root/testing/test-gcap-nf/workflows/hello3/bin
+Jun-24 08:57:49.682 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Jun-24 08:57:49.696 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Jun-24 08:57:49.699 [main] DEBUG nextflow.Session - Observer factory: TowerFactory
+Jun-24 08:57:49.729 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 5; maxThreads: 1000
+Jun-24 08:57:49.799 [main] DEBUG nextflow.Session - Session start invoked
+Jun-24 08:57:49.984 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Jun-24 08:57:50.160 [main] INFO  nextflow.Nextflow - 
+H E L L O - W O R L D - 3    P I P E L I N E
+============================================
+    greeting: Hello
+  
+Jun-24 08:57:50.222 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: sayHello, toUpper, toCowsay
+Jun-24 08:57:50.313 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jun-24 08:57:50.313 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jun-24 08:57:50.318 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Jun-24 08:57:50.323 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=4; memory=15.7 GB; capacity=4; pollInterval=100ms; dumpInterval=5m
+Jun-24 08:57:50.349 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 5; maxThreads: 1000
+Jun-24 08:57:50.415 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jun-24 08:57:50.415 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jun-24 08:57:50.466 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jun-24 08:57:50.466 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jun-24 08:57:50.473 [main] DEBUG nextflow.Session - Ignite dataflow network (4)
+Jun-24 08:57:50.473 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > sayHello
+Jun-24 08:57:50.474 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > toUpper
+Jun-24 08:57:50.474 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > toCowsay
+Jun-24 08:57:50.476 [main] DEBUG nextflow.script.ScriptRunner - > Await termination 
+Jun-24 08:57:50.479 [main] DEBUG nextflow.Session - Session await
+Jun-24 08:57:50.651 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-24 08:57:50.655 [Task submitter] INFO  nextflow.Session - [02/b01a24] Submitted process > sayHello (1)
+Jun-24 08:57:50.665 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-24 08:57:50.666 [Task submitter] INFO  nextflow.Session - [e8/f625e1] Submitted process > sayHello (3)
+Jun-24 08:57:50.670 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-24 08:57:50.671 [Task submitter] INFO  nextflow.Session - [69/785572] Submitted process > sayHello (2)
+Jun-24 08:57:50.694 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: sayHello (1); status: COMPLETED; exit: 0; error: -; workDir: /root/testing/test-gcap-nf/workflows/work/02/b01a248e71d83b38d2e6011c52389c]
+Jun-24 08:57:50.709 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-24 08:57:50.709 [Task submitter] INFO  nextflow.Session - [22/6a4e6c] Submitted process > toUpper (1)
+Jun-24 08:57:50.712 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 3; name: sayHello (3); status: COMPLETED; exit: 0; error: -; workDir: /root/testing/test-gcap-nf/workflows/work/e8/f625e1b977cc59c484a8b9e4abe348]
+Jun-24 08:57:50.722 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 2; name: sayHello (2); status: COMPLETED; exit: 0; error: -; workDir: /root/testing/test-gcap-nf/workflows/work/69/785572f14fc31e1cfc276a8ec9d2f8]
+Jun-24 08:57:50.742 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-24 08:57:50.746 [Task submitter] INFO  nextflow.Session - [3c/41159e] Submitted process > toCowsay (1)
+Jun-24 08:57:50.749 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 5; name: toUpper (1); status: COMPLETED; exit: 0; error: -; workDir: /root/testing/test-gcap-nf/workflows/work/22/6a4e6c4f2670e48a76d05eec7f9104]
+Jun-24 08:57:50.761 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-24 08:57:50.761 [Task submitter] INFO  nextflow.Session - [0d/01a44e] Submitted process > toUpper (2)
+Jun-24 08:57:50.765 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-24 08:57:50.766 [Task submitter] INFO  nextflow.Session - [20/62c75c] Submitted process > toCowsay (2)
+Jun-24 08:57:50.771 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-24 08:57:50.771 [Task submitter] INFO  nextflow.Session - [c5/8269ab] Submitted process > toUpper (3)
+Jun-24 08:57:50.788 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 6; name: toUpper (2); status: COMPLETED; exit: 0; error: -; workDir: /root/testing/test-gcap-nf/workflows/work/0d/01a44ec75b23359f0dd252257e77d2]
+Jun-24 08:57:50.792 [Task submitter] DEBUG nextflow.executor.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jun-24 08:57:50.792 [Task submitter] INFO  nextflow.Session - [f9/7050f8] Submitted process > toCowsay (3)
+Jun-24 08:57:50.797 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 8; name: toUpper (3); status: COMPLETED; exit: 0; error: -; workDir: /root/testing/test-gcap-nf/workflows/work/c5/8269ab4dca7af26ceb5fa7627f0322]
+Jun-24 08:58:00.174 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 7; name: toCowsay (2); status: COMPLETED; exit: 0; error: -; workDir: /root/testing/test-gcap-nf/workflows/work/20/62c75cc28ae0eaeafbd9b00da3205f]
+Jun-24 08:58:00.206 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 4; name: toCowsay (1); status: COMPLETED; exit: 0; error: -; workDir: /root/testing/test-gcap-nf/workflows/work/3c/41159e3199025c580feb408fe155de]
+Jun-24 08:58:00.285 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 9; name: toCowsay (3); status: COMPLETED; exit: 0; error: -; workDir: /root/testing/test-gcap-nf/workflows/work/f9/7050f883f1688820e71e7228c5a225]
+Jun-24 08:58:00.288 [main] DEBUG nextflow.Session - Session await > all process finished
+Jun-24 08:58:00.386 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Jun-24 08:58:00.393 [main] DEBUG nextflow.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=9; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=28.3s; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=3; peakCpus=3; peakMemory=0; ]
+Jun-24 08:58:00.474 [main] DEBUG nextflow.CacheDB - Closing CacheDB done
+Jun-24 08:58:00.474 [main] INFO  org.pf4j.AbstractPluginManager - Stop plugin 'nf-tower@1.1.1'
+Jun-24 08:58:00.475 [main] DEBUG nextflow.plugin.BasePlugin - Plugin stopped nf-tower
+Jun-24 08:58:00.481 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

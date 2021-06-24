@@ -1,0 +1,3 @@
+2021-06-24 08:56:51	-	nice_pesquet	-	3fa3519067272b0d2b0697d721f0dfdf	337e84c6-d9c8-46be-871c-62cdc6782369	/work/gcap_nf/nextflow/launch.sh run hello3
+2021-06-24 08:57:15	-	furious_lavoisier	-	3fa3519067272b0d2b0697d721f0dfdf	048ff2f0-7be2-485c-bf7c-5c8bf3df7250	/work/gcap_nf/nextflow/launch.sh run hello3
+2021-06-24 08:57:49	11.5s	golden_wozniak	OK	3fa3519067272b0d2b0697d721f0dfdf	4ff9a378-f990-43ec-9c17-3a238f354e3a	/work/gcap_nf/nextflow/launch.sh run hello3
