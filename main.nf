@@ -16,7 +16,7 @@ if (params.help) {
 }
 
 /*
- * main script flow
+ * main script flow info
  */
 
 workflow {

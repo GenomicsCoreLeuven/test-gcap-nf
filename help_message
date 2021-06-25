@@ -10,7 +10,7 @@ def helpMessage() {
   log.info """
         Usage:
         The typical command for running the pipeline is as follows:
-        nextflow run hello3 --greeting "Hello"
+        nextflow run hello3 --greeting "Hello there"
 
         Mandatory arguments: none
 
